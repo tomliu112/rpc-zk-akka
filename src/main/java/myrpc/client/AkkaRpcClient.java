@@ -38,7 +38,6 @@ public class AkkaRpcClient {
 		system = ActorSystem.create("EsbSystem", config);
 
 		int totalInstances = 100;
-		//todo zeekeeper
 		List<String> paths=null;
 		try {
 			ZooKeeperClient zkClient = new ZooKeeperClient("localhost:2181",null,null);
