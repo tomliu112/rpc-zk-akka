@@ -47,7 +47,6 @@ public class ServerMain {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		//todo 系列化 反序列化 替换调用ExampleInterfaceImpl为计算和方法 zookeeper
 
 	}
 }
