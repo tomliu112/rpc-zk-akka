@@ -61,7 +61,7 @@ public class AkkaRpcClient {
 						allowLocalRoutees, "RpcServer1"));
 		rpc = system.actorOf(clusterRouterGroup.props(), "rpcCall");
 		clientServer = system.actorOf(Props.create(RpcClientActor.class, rpc),
-				"client");
+				"rpcClient");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
