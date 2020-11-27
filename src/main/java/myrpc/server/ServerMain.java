@@ -26,7 +26,7 @@ public class ServerMain {
 								.parseString("akka.remote.netty.tcp.hostname=127.0.0.1"))
 				.withFallback(ConfigFactory.load());
 
-		ActorSystem system = ActorSystem.create("EsbSystem", config);
+		ActorSystem system = ActorSystem.create("RpcSystem", config);
 		
 		// Server 加入发布的服务
 		Map<Class<?>, Object> services = new HashMap<Class<?>, Object>();

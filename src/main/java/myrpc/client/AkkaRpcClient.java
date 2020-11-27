@@ -35,7 +35,7 @@ public class AkkaRpcClient {
 						ConfigFactory
 								.parseString("akka.cluster.roles = [RpcClient]"))
 				.withFallback(ConfigFactory.load());
-		system = ActorSystem.create("EsbSystem", config);
+		system = ActorSystem.create("RpcSystem", config);
 
 		int totalInstances = 100;
 		List<String> paths=null;
